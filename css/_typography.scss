@@ -1,0 +1,53 @@
+//Used in H1 and paragrafs
+$main-font: 'Montserrat', sans-serif;
+
+//Used in H2
+$second-font: 'Roboto', sans-serif;
+
+$clr-font-body: rgb(240,240,240);
+
+.s1 { //in menu only
+    font-family: $main-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.t1 { //basic size - paragraphs
+    font-family: $main-font;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $clr-font-body;
+    margin: 1.2rem 0 1.2rem 0;
+}
+@mixin t2 {
+    font-family: $second-font;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: $clr-dark-blue;
+    text-transform: uppercase;
+}
+.t2 {
+    @include t2;
+    margin: 1.2rem 0 1.2rem 0;
+}
+.t2--intitle {
+    @include t2;
+    margin: 1.0rem 0 1.0rem 0;   
+}
+@mixin t3 {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 6.5rem;
+    color: white;
+}
+.t3 {
+    @include t3;
+}
+.t3--intitle {
+    @include t3;
+    margin: 1.0rem 0 1.0rem 0;
+}
+.t3__michael--intitle {
+    font-weight: 500;
+    color: $clr-light-blue;
+}

@@ -1,0 +1,38 @@
+@mixin l-flex--row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+@mixin l-flex--column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;   
+}
+/////////////////////////////////////////
+.l-flex--column {
+    display: flex;
+    @include column;
+}
+.l-flex--column-row {
+    display: flex;
+    @media (max-width: 1085px) {
+         @include column;
+    }
+    @media (min-width: 1086px){
+         @include row;
+    }
+}
+.l-flex--row {
+    display: flex;
+    @include row;
+}
+.l-flex--row-column {
+    display: flex;
+    @media (max-width: 1085px) {
+         @include row;
+    }
+    @media (min-width: 1086px){
+         @include column;
+    }
+}
+//////////////////////////////////////////

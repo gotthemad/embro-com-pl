@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'typography';
+
+html {
+    margin: 0;
+    box-sizing: border-box;
+    
+    @media (max-width: 1085px){
+        font-size: 43.75%;
+    }
+    
+    @media (min-width: 1086px) and (max-width: 1366px) {
+        font-size: 50.0%;
+    }
+    
+    @media (min-width: 1367px) {
+        font-size: 62.5%;
+    }
+}
+body {
+    background-image: url(../img/bg-4k.png);
+    background-repeat: repeat;
+    background-color: rgb(0,0,0);
+    margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@import 'js';
+@import 'sidebar';
+@import 'maincontent';
+@import 'buttons';
+@import 'svg';
+@import 'logo';

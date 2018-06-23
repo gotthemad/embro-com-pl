@@ -1,0 +1,53 @@
+a:focus {
+    outline: 0.3rem dotted $clr-dark-blue;
+    outline-offset: 0.3rem;
+}
+
+//DEFAULT BUTTON STYLES
+.btn {
+    text-transform: uppercase;
+    font-family: $second-font;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 800;
+    color: white;
+    padding: 2.0rem 4.0rem 2.0rem 4.0rem;
+    border-radius: 0.3rem 0.3rem;
+    border: 0.2rem solid $clr-light-blue;
+    background-color: rgba(0,0,0,0);
+    transition: background 0.3s, border 0.3s;
+    cursor: pointer;   
+}
+.btn:hover {
+    background-color: $clr-orange;
+    border: 0.2rem solid rgb(0,0,0);
+    color: rgb(0,0,0);
+}
+.btn:focus {
+    outline: 0.3rem dotted $clr-dark-blue;
+    outline-offset: 0.1rem;
+}
+.btn:active {
+    outline: none;
+    background-color: $clr-orange;
+}
+.l-btn {
+    margin-right: 1.5rem;
+}
+
+//SOCIAL ICONS STYLES
+.social-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.btn-social {
+    display: inline-block;
+    color: $clr-icons--social;
+    transition: color 0.3s;
+}
+.btn-social:hover {
+    color: $clr-orange;
+}
+.l-btn-wrap {
+    margin: 1.5rem;
+}

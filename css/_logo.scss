@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+.logo__wrapper {
+
+    transform: skewY(15deg);
+    
+    @media (max-width: 1085px) {
+        width: 65%;
+    }
+    @media (min-width: 1085px) {
+        width: 85%;
+    }
+    
+}
+.logo__ratio {
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+
+}
+.logo__inner {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-flow: wrap;
+}
+@mixin logo__pixel {
+    width: 8.32%;
+    height: 12.5%;
+    background-clip: content-box;
+    box-sizing: border-box;
+    
+}
+.logo__pixel {
+    @include logo__pixel;
+}
+@keyframes pixel--a-b {
+    0% {background-color: $clr-dark-blue; padding: 4%;}
+    15% {background-color: $clr-light-blue; padding: 1.5%;}
+    45% {background-color: $clr-dark-blue; padding: 4%;}
+    75% {background-color: $clr-light-blue; padding: 0%;}
+    100% {background-color: $clr-dark-blue; padding: 0%;}
+}
+@keyframes pixel--m-z {
+    0% {background-color: $clr-dark-blue; padding: 4%;}
+    25% {background-color: $clr-dark-blue; padding: 1.5%;}
+    45% {background-color: $clr-light-blue; padding: 4%;}
+    75% {background-color: $clr-dark-blue; padding: 0%;}
+    100% {background-color: $clr-light-blue; padding: 0%;}
+}
+.logo__pixel--a {
+    
+    @include logo__pixel;
+    
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    background-color: $clr-dark-blue;
+    padding: 0;  
+}
+.logo__pixel--m {
+    
+    @include logo__pixel;
+    
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    background-color: $clr-light-blue;
+    padding: 0;  
+}
+.logo__pixel--b {
+    
+    @include logo__pixel;
+    
+    animation-delay: 0.1s;
+    animation-duration: 2.1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    background-color: $clr-dark-blue;
+    padding: 0;   
+}
+.logo__pixel--z {
+    
+    @include logo__pixel;
+    
+    animation-delay: 0.3s;
+    animation-duration: 2.1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    background-color: $clr-light-blue;
+    padding: 0;   
+}

@@ -1,0 +1,117 @@
+//sideBar
+.sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $clr-sidebar-bg;
+    z-index: 11;
+    width: 10.0rem;
+@media (max-width: 1085px) {
+    right: 0;
+    }
+@media (min-width: 1086px){
+    left: 0;
+    height: 100%;
+    align-items: center;
+    padding: 2.4rem 0 2.4rem 0;
+    }
+}
+
+//sidebar logo
+.sidebar__logo {
+@media (max-width: 1085px) {
+    display: none;
+}
+@media (min-width: 1086px) {
+    display: flex;
+//    flex: auto;
+    align-content: flex-start;
+    margin: 0;
+    }
+}    
+.logo__svg {
+    width: 100%;
+    height: 5.39rem;
+}
+
+//sidebar burger
+.menu__burger {
+@media (max-width: 1085px) {
+    height: 10.0rem;
+    width: 10.0rem;
+    background-color: $clr_light_blue;
+    color: black;
+    border: none;
+}
+@media (min-width: 1086px) {
+    display: none;
+    }  
+}
+.burger__icon {
+@media (max-width: 1085px){
+    width: 5.0rem;
+    height: 5.0rem;
+    }
+}
+//sidebar main menu
+.sidebar__menu {
+    transition: all 0.3s;
+}
+@mixin sidebar-btn {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    justify-content: center;
+    justify-self: center;
+    height: 10.0rem;
+    width: 10.0rem;
+    color: $clr-icons;
+}
+.sidebar-btn {   
+    @include sidebar-btn;
+}
+.sidebar-btn:focus {
+    border: 0.3rem dotted $clr-dark-blue;
+    outline: none;
+}
+.sidebar-btn:active {
+    border: none;
+}
+.sidebar-btn:hover {
+    color: $clr-orange;
+}
+@mixin sidebar-btn__svg { 
+    align-self: center;
+    margin: 0 0 0.6rem 0;
+    width: 3.0rem;
+    height: 3.0rem;
+}
+.sidebar-btn__svg {
+    @include sidebar-btn__svg;
+}
+.sidebar-btn__svg--social {
+    @include sidebar-btn__svg;
+    margin: 0;
+}
+.sidebar-btn__svg path {
+    fill: currentColor;
+}
+.sidebar-btn__name {
+    text-align: center;
+    margin: 0.6rem 0 0 0;
+}
+
+//sidebar social media
+.sidebar__social-media {
+    @media (max-width: 1085px) {
+        display: none;}
+    
+    @media (min-width: 1086px) {
+        display: flex;
+//        flex: auto;
+        flex-direction: column;
+        justify-content: flex-end;}
+}
