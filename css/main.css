@@ -621,10 +621,7 @@ body {
   height: 50vh;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
+          justify-content: space-between; }
   @media (max-width: 1085px) {
     .section__inner--column-row.chart {
       display: -webkit-box;
@@ -1100,5 +1097,25 @@ a:focus {
           animation-timing-function: ease-in;
   background-color: #00a8a7;
   padding: 0; }
+
+.pie-chart {
+  -webkit-transform: rotate(-90deg) scale(1);
+          transform: rotate(-90deg) scale(1);
+  width: 20.0rem;
+  height: 20.0rem;
+  border-radius: 50%; }
+
+.pie-chart circle {
+  fill: rgba(0, 0, 0, 0.2);
+  stroke: #00a8a7;
+  stroke-width: 1; }
+
+@-webkit-keyframes fillup {
+  to {
+    stroke-dasharray: 158 158; } }
+
+@keyframes fillup {
+  to {
+    stroke-dasharray: 158 158; } }
 
 /*# sourceMappingURL=main.css.map */

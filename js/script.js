@@ -49,6 +49,7 @@ const yStartAbout = [-140,-110,-130,-100],
       yStartProjects = [-120,-140,-110],
       yStartContacts = [-150,-80];
 
+
 //init
 (function init() {
     

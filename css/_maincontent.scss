@@ -160,7 +160,7 @@
 .section__inner--column-row.chart {
     height: 50vh;
     justify-content: space-between;
-    align-items: flex-end;
+    // align-items: flex-end;
     @media (max-width: 1085px){
         @include l-flex--column;
         flex-direction: column-reverse;
