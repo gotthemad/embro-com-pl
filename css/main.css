@@ -1098,9 +1098,25 @@ a:focus {
   background-color: #00a8a7;
   padding: 0; }
 
+.skills {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .pie-chart {
-  -webkit-transform: rotate(-90deg) scale(1);
-          transform: rotate(-90deg) scale(1);
+  margin: 5.0rem; }
+
+.pie-chart svg {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   width: 20.0rem;
   height: 20.0rem;
   border-radius: 50%; }
@@ -1109,13 +1125,5 @@ a:focus {
   fill: rgba(0, 0, 0, 0.2);
   stroke: #00a8a7;
   stroke-width: 1; }
-
-@-webkit-keyframes fillup {
-  to {
-    stroke-dasharray: 158 158; } }
-
-@keyframes fillup {
-  to {
-    stroke-dasharray: 158 158; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,36 @@
+{
+    "skills": [
+        {
+            "name": "JavaScript",
+            "progress": "55%"
+        },
+        {
+            "name": "jQuery",
+            "progress": "32%"
+        },
+        {
+            "name": "Angular",
+            "progress": "20%"
+        },
+        {
+            "name": "HTML5",
+            "progress": "78%"
+        },
+        {
+            "name": "RWD",
+            "progress": "62%"
+        },
+        {
+            "name": "CSS3",
+            "progress": "82%"
+        },
+        {
+            "name": "SASS",
+            "progress": "51%"
+        },
+        {
+            "name": "GIT",
+            "progress": "56%"
+        }
+    ]
+}
