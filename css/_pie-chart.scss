@@ -6,15 +6,25 @@
 }
 .pie-chart {
     margin: 5.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 .pie-chart svg {
     transform: rotate(-90deg);
-    width: 20.0rem;
-    height: 20.0rem;
+    width: 26.0rem;
+    height: 26.0rem;
     border-radius: 50%;
 }
 .pie-chart circle {
     fill: rgba(0,0,0,0.2);
     stroke: $clr-light-blue;
     stroke-width: 1;
+    transition: all 0.3s;
+  }
+  .pie-chart circle:hover {
+    fill: $clr-dark-blue;
+    // stroke: $clr-dark-blue;
+    stroke-width: 15;
   }

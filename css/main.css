@@ -44,6 +44,13 @@
   font-weight: 500;
   color: #00a8a7; }
 
+.t-center {
+  text-align: center;
+  position: absolute;
+  margin: 0;
+  z-index: 10;
+  width: 18rem; }
+
 html {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -1112,18 +1119,34 @@ a:focus {
           justify-content: center; }
 
 .pie-chart {
-  margin: 5.0rem; }
+  margin: 5.0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%; }
 
 .pie-chart svg {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  width: 20.0rem;
-  height: 20.0rem;
+  width: 26.0rem;
+  height: 26.0rem;
   border-radius: 50%; }
 
 .pie-chart circle {
   fill: rgba(0, 0, 0, 0.2);
   stroke: #00a8a7;
-  stroke-width: 1; }
+  stroke-width: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.pie-chart circle:hover {
+  fill: #20677d;
+  stroke-width: 15; }
 
 /*# sourceMappingURL=main.css.map */

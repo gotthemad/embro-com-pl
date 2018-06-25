@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 let progress = parseFloat(skillsObj.skills[i].progress);
 
                 let div = document.createElement("div");
+                let h2 = document.createElement("h2");
+                let p = document.createElement("p");
                 let svg = document.createElementNS(NS, "svg");
                 let circle = document.createElementNS(NS, "circle");
                 let title = document.createElementNS(NS, "title");
@@ -30,10 +32,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 circle.setAttribute("cy", 16);
                 circle.setAttribute("stroke-dasharray", progress + " 100");
                 title.textContent = name;
+                h2.setAttribute("class","t2 t-center");
+                h2.textContent = name;
 
                 svg.appendChild(title);
                 svg.appendChild(circle);
-                div.appendChild(svg)
+                div.appendChild(h2);
+                div.appendChild(svg);
 
                 for(let i = 0; i < pieChart.length; i++){
                     pieChart[i].appendChild(div);

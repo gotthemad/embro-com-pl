@@ -1,16 +1,16 @@
 {
     "skills": [
         {
-            "name": "JavaScript",
-            "progress": "55%"
+            "name": "Java Script",
+            "progress": "33%"
         },
         {
             "name": "jQuery",
-            "progress": "32%"
+            "progress": "20%"
         },
         {
             "name": "Angular",
-            "progress": "20%"
+            "progress": "10%"
         },
         {
             "name": "HTML5",
