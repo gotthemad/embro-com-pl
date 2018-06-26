@@ -23,8 +23,21 @@
     stroke-width: 1;
     transition: all 0.3s;
   }
-  .pie-chart circle:hover {
+.pie-chart--active circle {
     fill: $clr-dark-blue;
-    // stroke: $clr-dark-blue;
     stroke-width: 15;
   }
+.pie-chart .pie-chart__desc {
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    z-index: 10;
+    width: 18rem;
+    color: $clr-dark-blue;
+}
+.pie-chart--active .pie-chart__desc {
+    color: $clr-light-blue;
+}
+.pie-chart--active .pie-chart__desc:after {
+    content: "%"
+}
