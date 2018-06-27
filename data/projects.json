@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+            "name": "embro.com.pl",
+            "desc": "My portfolio.",
+            "imgSrc": "data/img-projects/embro-com-pl.jpg",
+            "githubLink": "http://github.com/",
+            "wwwLink": "http://embro.com.pl/"
+        },
+        {
+            "name": "pw-master.pl",
+            "desc": "Simple page for Master company.",
+            "imgSrc": "data/img-projects/pw-master-pl.jpg",
+            "githubLink": "http://github.com/",
+            "wwwLink": "http://pw-master.pl/"
+        }
+    ]
+}
